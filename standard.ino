@@ -21,12 +21,12 @@ Serial.begin(9600);
 //Serial.println("16 channel Servo test!");
 pwm.begin();  //Initialize the library and send PWM signals.
 pwm.setPWMFreq(FREQUENCY); //Servo's update frequency at 60 Hertz.
-pwm.setPWM(0,0,pulseWidth(0)); //base_servo1 - left right
-pwm.setPWM(1,0,pulseWidth(0)); //joint2_servo2 - up down
-pwm.setPWM(2,0,pulseWidth(0)); ////joint3_servo3 up down
-pwm.setPWM(3,0,pulseWidth(0)); ////joint4_servo4 up down
-pwm.setPWM(4,0,pulseWidth(0)); //joint5_servo5 rotate 
-pwm.setPWM(5,0,pulseWidth(0)); //joint6_servo6 open close claw
+pwm.setPWM(4,0,pulseWidth(0)); //base_servo1 - left right
+pwm.setPWM(5,0,pulseWidth(0)); //joint2_servo2 - up down
+pwm.setPWM(6,0,pulseWidth(0)); ////joint3_servo3 up down
+pwm.setPWM(7,0,pulseWidth(0)); ////joint4_servo4 up down
+pwm.setPWM(8,0,pulseWidth(0)); //joint5_servo5 rotate 
+pwm.setPWM(9,0,pulseWidth(0)); //joint6_servo6 open close claw
 }
  
 void loop(){ 
