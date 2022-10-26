@@ -20,7 +20,7 @@ void setup(){
 Serial.begin(9600);
 //Serial.println("16 channel Servo test!");
 pwm.begin();  //Initialize the library and send PWM signals.
-pwm.setPWMFreq(FREQUENCY); //Servo's update frequency at 60 Hertz.
+pwm.setPWMFreq(FREQUENCY); //Servo's update frequency at 60 Hertz. DO NOT MOVE THIS OUT OF SETUP OTHERWISE PWM BOARD WILL BURN
 pwm.setPWM(4,0,pulseWidth(0)); //base_servo1 - left right
 pwm.setPWM(5,0,pulseWidth(0)); //joint2_servo2 - up down
 pwm.setPWM(6,0,pulseWidth(0)); ////joint3_servo3 up down
